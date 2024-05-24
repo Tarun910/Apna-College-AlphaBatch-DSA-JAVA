@@ -2,9 +2,6 @@
 
 Welcome to the Alpha Batch DSA Codes Repository! Here you'll find a comprehensive collection of Data Structures and Algorithms (DSA) codes, ranging from fundamental topics like Arrays to advanced concepts like Dynamic Programming. This repository also includes my handwritten notes, ensuring a holistic learning experience.
 
-# If these notes helped you, check out  this :  [Click here](https://www.youtube.com/channel/UCu1buKBnx-r9A2vzDVEJC9g)
-**If you found these notes helpful, dive deeper into concepts on my YouTube channel. I share insights on various topics, discuss problem-solving strategies, and provide additional learning resources. Subscribe for more content to fuel your coding journey!**
-
 ## Topics Covered 📚
 
 - **Arrays**
@@ -19,9 +16,6 @@ Welcome to the Alpha Batch DSA Codes Repository! Here you'll find a comprehensiv
 - **Dynamic Programming**
 - ... and much more!
 
-## Handwritten Notes ✍️
-
-I've included my detailed handwritten notes, providing explanations and insights into each DSA topic. These notes aim to enhance your understanding and serve as a valuable resource during your learning journey.
 
 ## How to Use This Repository 🛠️
 
@@ -39,7 +33,7 @@ I've included my detailed handwritten notes, providing explanations and insights
 
 Let's connect and collaborate! If you have questions, suggestions, or just want to say hi, feel free to reach out:
 
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/mandartule)
-- **Email:** mandartule5@gmail.com
+- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/tarun910/)
+- **Email:** namdevtarun910@gmail.com
 
-Happy coding! 🚀✨
+Happy coding!
