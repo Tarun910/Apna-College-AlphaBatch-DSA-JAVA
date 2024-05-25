@@ -1797,3 +1797,293 @@ public class practice {
   */
 
   
+
+  /**
+   * practice
+   */
+//   public class practice {
+  
+//     public static void main(String[] args) {
+//         //sum of array
+//         int arr[] = {1,2,3};
+//         int sum = 0;
+//         for(int i=0; i<arr.length; i++){
+//             sum+=arr[i];
+//         }
+//         System.out.println("The sum of the array is : " + sum);
+//     }
+//   }
+
+
+/**
+ * practice
+ */
+// public class practice {
+
+//     public static int arrSum(int arr[] ){
+        
+//         int sum = 0;
+//         for(int element : arr){
+//             sum += element;
+//         }
+
+//         return sum;
+
+//     }
+
+//     public static void main(String[] args) {
+//         int arr[] = {1,2,3};
+//         System.out.println("The sum is : " + arrSum(arr));
+        
+//     }
+// }
+
+
+/**
+ * practice
+ */
+// public class practice {
+
+//     public static void main(String[] args) {
+//         int arr[] = {1,2,3,4,5,6,7};
+//         int max = Integer.MIN_VALUE;
+//         int min = Integer.MAX_VALUE;
+//         for(int element : arr){
+//             if(element > max){
+//                 max = element;
+
+//             }
+//             if(element <min){
+//                 min = element;
+//             }
+//         }
+
+//         System.out.println("the max is " + max);
+//         System.out.println("the min is " + min);
+//       }
+// }
+
+
+/**
+ * practice
+ */
+// public class practice {
+
+//     public static int largest_Element(int arr[]){
+
+//         int max = arr[0];
+//         for(int i=0; i<arr.length; i++){
+//             if(arr[i] > max){
+//                 max = arr[i];
+//             }
+//         }
+        
+
+//        return max;
+//     }
+
+//     public static void main(String[] args) {
+//         int arr[] = {1,2,3,4,5,6,7};
+//        int le= largest_Element(arr);
+//        System.out.println("largest element is " + le);
+
+        
+//     }
+// }
+
+
+/**
+ * practice
+ */
+// public class practice {
+
+//     public static int missing_element(int arr[], int n){
+//         int idealSum = (n*(n+1)/2);
+//         int actualSum = 0;
+//         for(int i=0; i<arr.length; i++){
+//             actualSum+=arr[i];
+        
+//         }
+        
+//         return idealSum - actualSum;
+//     }
+
+//     public static void main(String[] args) {
+//         int arr[] = {1,2,3,5};
+//         int n = 5;
+
+//         int m = missing_element(arr, n);
+//         System.out.println(m);
+//     }
+// }
+
+
+
+/**
+ * practice
+ */
+// public class practice {
+
+//     public static void userInput(int arr[]){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("enter elements");
+//         for(int i=0; i<arr.length; i++){
+//             arr[i] = sc.nextInt();
+//         }
+
+//     }
+
+//     public static void reverseArray(int arr[]){
+
+//         int start =0;
+//         int end = arr.length-1;
+//         while(start != end){
+//             int temp = arr[start];
+//             arr[start] = arr[end];
+//             arr[end] = temp;
+//             start++;
+//             end--;
+//         }
+//     }
+
+//     public static void printArr(int arr[]){
+//         for(int element : arr){
+//             System.out.print(element + " ");
+//         }
+//         System.out.println();
+//     }
+//     public static void main(String[] args) {
+//        int arr[] = new int[7];
+//        userInput(arr);
+//         printArr(arr);
+//         reverseArray(arr);
+//         printArr(arr);
+
+
+//     }
+// }
+
+
+/**
+ * practice
+ */
+// public class practice {
+
+//     public static void rotation(int arr[], int d, int n){
+
+//         int temp[] = new int[n];
+//         int k=0;
+//         for(int i=d; i<arr.length; i++){
+//             temp[k] = arr[i];
+//             k++;
+//         }
+
+//         for(int i=0; i<d; i++){
+//             temp[k] = arr[i];
+//             k++;
+//         }
+
+//         //final copy
+//         for(int i=0; i<arr.length; i++){
+//             arr[i] = temp[i];
+//         }
+//     }
+
+//     public static void print(int arr[]){
+//         for(int element :arr){
+//             System.out.print(element + " ");
+//         }
+//         System.out.println();
+//     }
+
+//     public static void main(String[] args) {
+//         int arr[] = {1,2,3,4,5,6,7};
+//         int d = 2;
+//         int n = arr.length;
+//         rotation(arr, d, n);
+//         print(arr);
+
+//     }
+// }
+
+
+/**
+ * practice
+ */
+// public class practice {
+
+//     public static boolean checkDuplicate(int arr[]){
+//         for(int i=0; i<arr.length; i++){
+//             for(int j=i+1; j<arr.length; j++){
+//                 if(arr[i] == arr[j]){
+//                     return true;
+//                 }
+//             }
+//         }
+//         return false;
+//     }
+
+//     public static void main(String[] args) {
+//         int arr[] = {1,2,3,1,4,5,6};
+//         System.out.println(checkDuplicate(arr));
+        
+//     }
+// }
+
+
+//linear search(key) in  java ------------>>>>>>>>>>>>>.
+/**
+ * practice
+ */
+// public class practice {
+
+//     public static int searchKey(int arr[], int key){
+//         for(int i=0; i<arr.length; i++){
+//             if(arr[i] == key){
+//                 return i;
+//             }
+//         }
+//         return -1;
+//     }
+
+//     public static void main(String[] args) {
+//         int arr[] = {1,2,3,4,5};
+//         int key = 44;
+      
+
+//        int index = searchKey(arr, key);
+//        if(index == -1){
+//         System.out.println("the index is not found");
+//        }else{
+//         System.out.println("key is at index : " + index);
+//        }
+
+    
+      
+//     }
+// }
+
+
+
+/**
+ * find pairs in Array---------------------->>>>>>>>>>>>>>
+ */
+public class practice {
+    public static void getPair(int arr[]){
+        for(int i=0; i<arr.length; i++){
+            int curr = arr[i];
+            for(int j=i+1; j<arr.length; j++){
+                System.out.print("(" + curr +"," + arr[j]  + ")");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+        int arr[] = {2,4,6,8,10};
+        getPair(arr);
+    
+
+        
+    }
+}
