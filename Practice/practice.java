@@ -2068,22 +2068,188 @@ public class practice {
 /**
  * find pairs in Array---------------------->>>>>>>>>>>>>>
  */
-public class practice {
-    public static void getPair(int arr[]){
-        for(int i=0; i<arr.length; i++){
-            int curr = arr[i];
-            for(int j=i+1; j<arr.length; j++){
-                System.out.print("(" + curr +"," + arr[j]  + ")");
-            }
-            System.out.println();
-        }
-    }
+// public class practice {
+//     public static void getPair(int arr[]){
+//         for(int i=0; i<arr.length; i++){
+//             int curr = arr[i];
+//             for(int j=i+1; j<arr.length; j++){
+//                 System.out.print("(" + curr +"," + arr[j]  + ")");
+//             }
+//             System.out.println();
+//         }
+//     }
 
-    public static void main(String[] args) {
-        int arr[] = {2,4,6,8,10};
-        getPair(arr);
+//     public static void main(String[] args) {
+//         int arr[] = {2,4,6,8,10};
+//         getPair(arr);
     
 
         
+//     }
+// }
+
+
+
+/**
+ * practice
+ */
+// public class practice {
+//     public static void getPairs(int arr[]){
+//         for(int i=0; i<arr.length; i++){
+//             int curr = arr[i];
+//             for(int j=i+1; j<arr.length; j++){
+//                 System.out.print("(" + curr + "," + arr[j] + ")");
+//             }
+//             System.out.println();
+//         }
+
+//     }
+
+//     public static void main(String[] args) {
+//         int arr[] = {2,4,6,8,10};
+//         getPairs(arr);
+//     }
+// }
+
+
+/**
+ * practice
+ */
+// public class practice {
+
+//     public static boolean checkDuplicate(int arr[] ){
+//         for(int i=0; i<arr.length; i++){
+//             for(int j=i+1; j<arr.length; j++){
+//                 if(arr[i] == arr[j]){
+//                     return true;
+//                 }
+//             }
+//         }
+//         return false;
+//     }
+
+//     public static void main(String[] args) {
+//         int arr[] = {1,2,3,3,4,5,2};
+//         System.out.println(checkDuplicate(arr));
+
+    
+//     }
+// }
+
+
+/**
+ * practice
+ */
+// public class practice {
+//     public static int keySearch(int arr[] , int key){
+//         for(int i=0; i<arr.length; i++){
+//             if(arr[i] == key){
+//                 return i;
+//             }
+//         }
+//         return -1;
+//     }
+
+//     public static void main(String[] args) {
+//         int arr[] = {1,2,3,4,5};
+//         int key = 4;
+//         int index = keySearch(arr, key);
+//         if(index == -1){
+//             System.out.println("Key not found");
+//         }else{
+//             System.out.println("Key is at Index : " + index);
+//         }
+//     }
+// }
+
+
+/**
+ * practice
+ */
+
+ /**
+  * practice
+  */
+//  public class practice {
+//     public static int BuyAndSellStock(int prices []){
+
+//         int buyPrice = Integer.MAX_VALUE;
+//         int maxProfit = 0;
+
+//         for(int i = 0; i<prices.length; i++ ){
+
+//             if(buyPrice<prices[i]){ //profit
+//                int profit = prices[i]-buyPrice;
+               
+//                maxProfit = Math.max(maxProfit, profit);
+
+//             }else{
+//                 buyPrice = prices[i];
+//             }
+
+//         }
+//         return maxProfit;
+//     }
+
+
+//     public static void main(String args[]){
+        
+//         int prices[] = {7, 1, 5, 3, 6, 4};
+
+
+
+//         System.out.print(BuyAndSellStock(prices));
+
+//     }
+    
+// }
+
+
+
+/**
+ * practice
+ */
+// public class practice {
+//     public static int trappedWater(int height[]){
+//         int n = height.length;
+//         //calculate left max boundary - array
+//         int leftMax[] = new int[n];
+//         leftMax[0] = height[0];
+//         for(int i=1; i<n; i++{
+//             leftMax[i] = Math.max(height[i], leftMax[i-1]);
+
+//         })
+
+//     }
+
+//     public static void main(String[] args) {
+//         int height[] = {0,1,0,2,1,0,1,3,2,1,2,1};
+
+
+//     }
+// }
+
+
+
+
+/**
+ * practice
+ */
+public class practice {
+
+    public static int missingElement(int arr[], int n){
+        int idealSum = n*(n+1)/2;
+        int actualSum = 0;
+        for(int element : arr){
+            actualSum +=element;
+        }
+        return idealSum - actualSum;
+    }
+
+    public static void main(String[] args) {
+        int arr[] = {1,2,3,5};
+        int n = 5;
+        int print = missingElement(arr, n);
+        System.out.println(print);
     }
 }
