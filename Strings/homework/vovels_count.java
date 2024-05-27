@@ -1,4 +1,4 @@
-public class vovels_count {
+ public class vovels_count {
 
     public static void count(String str){
         
