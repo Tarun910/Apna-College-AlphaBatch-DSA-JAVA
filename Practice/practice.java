@@ -30,16 +30,14 @@ import java.util.*;
 //         int len = arr.length;
 //        int uniqueElement =  removeElement(arr, len);
 //        System.out.println("The unique Elements are : " + uniqueElement);
-        
-//        printUniqueElement(arr, uniqueElement, uniqueElement);
 
+//        printUniqueElement(arr, uniqueElement, uniqueElement);
 
 //        for(int k=0; k<uniqueElement; k++){
 //         System.out.println(arr[k]);
 //        }
 //     }
 // }
-
 
 /**
  * practice
@@ -79,8 +77,6 @@ import java.util.*;
 //     }
 // }
 
-
-
 /**
  * practice
  */
@@ -100,17 +96,14 @@ import java.util.*;
 //         int arr[] = {1,2,3,4,1,2,5};
 //         int result = checkDuplicates(arr);
 
-
 //        if(result == -1){
 //         System.out.println("No Duplicates");
 //        }else{
 //         System.out.println("Duplicate Found");
 //        }
 
-        
 //     }
 // }
-
 
 /**
  * practice
@@ -133,13 +126,12 @@ import java.util.*;
 //     }
 // }
 
-
 /**
  * practice
  */
 // public class practice {
 //     public static int BuyAndSellSTock(int prices[]){
-        
+
 //         int buyPrice = Integer.MAX_VALUE;
 //         int maxProfit = 0;
 
@@ -161,7 +153,6 @@ import java.util.*;
 //         System.out.println(BuyAndSellSTock(prices));
 //     }
 // }
-
 
 /**
  * practice
@@ -188,8 +179,6 @@ import java.util.*;
 //        }
 //     }
 // }
-
-
 
 /**
  * practice
@@ -224,9 +213,9 @@ import java.util.*;
  */
 // public class practice {
 //     public static int removeAll(int arr[] , int key){
-       
+
 //         int j=0;
-        
+
 //         for(int i=0; i<arr.length; i++){
 //             if(arr[i] != key){
 //                 arr[j++] = arr[i];
@@ -240,12 +229,12 @@ import java.util.*;
 //         int key = 3;
 //         int count = removeAll(arr, key);
 //         System.out.println(count);
-       
+
 //         for(int k=0; k<count; k++){
 //             System.out.print(arr[k] + " ");
 //         }
 //         System.out.println();
-        
+
 //     }
 // }
 
@@ -260,7 +249,6 @@ import java.util.*;
 //     //    String name = sc.nextLine();
 //     //    System.out.println("Your name is : " + name);
 
-
 //     String name = "Tarun";
 //     String cast = "Namdev";
 //     System.out.println(name.length());
@@ -273,11 +261,8 @@ import java.util.*;
 //     }
 //     System.out.println();
 
-    
-
 //     }
 // }
-
 
 /**
  * practice
@@ -286,7 +271,7 @@ import java.util.*;
 //     public static float getPath(String path){
 //         int x = 0;
 //         int y = 0;
-      
+
 //         for(int i=0; i<path.length(); i++){
 //             char dir = path.charAt(i);
 //             //North
@@ -317,8 +302,6 @@ import java.util.*;
 //     }
 // }
 
-
-
 /**
  * practice
  */
@@ -341,28 +324,110 @@ import java.util.*;
 //     }
 // }
 
+/**
+ * practice
+ */
+/**
+ * practice
+ */
+// public class practice {
 
+//     public static void main(String[] args) {
+//         String fruits[] = {"apple", "mango","banana"};
+//         String largest = fruits[0];
+//         for(int i=0; i<fruits.length; i++){
+//             if(largest.compareTo(fruits[i])< 0){
+//                 largest = fruits[i];
 
-
-
+//             }
+//         }
+//         System.out.println(largest);
+//     }
+// }
 
 /**
  * practice
  */
+// public class practice {
+//     public static boolean checkAnagram(String str1, String str2) {
+//         if (str1 == null || str1 == null) {
+//             return false;
+//         }
+
+//         if (str1.length() != str2.length()) {
+//             return false;
+//         }
+
+//         char[] charArray1 = str1.toCharArray();
+//         char[] charArray2 = str2.toCharArray();
+
+//         // sort the arrays
+//         Arrays.sort(charArray1);
+//         Arrays.sort(charArray2);
+
+//         return Arrays.equals(charArray1, charArray2);
+//     }
+
+//     public static void main(String[] args) {
+//         String str1 = "listen";
+//         String str2 = "silent";
+//         checkAnagram(str1, str2);
+//         if (checkAnagram(str1, str2)) {
+//             System.out.println("these strings are anagram");
+//         } else {
+//             System.out.println("Not an Anagram");
+//         }
+//     }
+// }
+
+/**
+ * practice
+ */
+// public class practice {
+//     public static String reverse(String str) {
+//         if (str == null) {
+//             return null;
+//         }
+//         char[] charArray = str.toCharArray();
+//         int left = 0;
+//         int right = charArray.length - 1;
+//         while (left < right) {
+//             char temp = charArray[left];
+//             charArray[left] = charArray[right];
+//             charArray[right] = temp;
+//             left++;
+//             right--;
+//         }
+//         String newString = new String(charArray);
+//         return newString;
+//     }
+
+//     public static void main(String[] args) {
+//         String name = "Tarun";
+//         System.out.println(reverse(name).toUpperCase());
+//     }
+// }
+
 /**
  * practice
  */
 public class practice {
-
-    public static void main(String[] args) {
-        String fruits[] = {"apple", "mango","banana"};
-        String largest = fruits[0];
-        for(int i=0; i<fruits.length; i++){
-            if(largest.compareTo(fruits[i])< 0){
-                largest = fruits[i];
-
+    public static boolean checkPalindro(String str) {
+        for (int i = 0; i < str.length() / 2; i++) {
+            int n = str.length();
+            if (str.charAt(i) != str.charAt(n - 1 - i)) {
+                return false;
             }
         }
-        System.out.println(largest);
+        return true;
+    }
+
+    public static void main(String[] args) {
+        String str = "racecar";
+        checkPalindro(str);
+        System.out.println(checkPalindro(str
+
+        ));
+
     }
 }
