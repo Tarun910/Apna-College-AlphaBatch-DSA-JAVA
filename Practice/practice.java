@@ -411,23 +411,181 @@ import java.util.*;
 /**
  * practice
  */
+// public class practice {
+//     public static boolean checkPalindro(String str) {
+//         for (int i = 0; i < str.length() / 2; i++) {
+//             int n = str.length();
+//             if (str.charAt(i) != str.charAt(n - 1 - i)) {
+//                 return false;
+//             }
+//         }
+//         return true;
+//     }
+
+//     public static void main(String[] args) {
+//         String str = "racecar";
+//         checkPalindro(str);
+//         System.out.println(checkPalindro(str
+
+//         ));
+
+//     }
+// }
+
+/**
+ * practice
+ */
+
+// public class practice {
+//     public static int Find(ArrayList<Integer> list) {
+//         int max = Integer.MIN_VALUE;
+//         for (int i = 0; i < list.size(); i++) {
+//             if (list.get(i) >= max) {
+//                 max = list.get(i);
+//             }
+//         }
+//         return max;
+//     }
+
+//     public static void main(String[] args) {
+
+//         public static void swap(ArrayList<Integer> list, int idx1 , int idx2){
+//             int temp = list.get(idx1);
+//             list.set(idx1, list.get(idx2));
+//             list.set(idx2, temp);
+
+//         }
+//         ArrayList<Integer> list = new ArrayList<>();
+//         list.add(2);
+//         list.add(5);
+//         list.add(9);
+//         list.add(3);
+//         list.add(6);
+
+//         int idx1 = 1;
+
+//         int idx2 = 3;
+//         System.out.println(list);
+//         swap
+
+// // System.out.println(list.size());
+// // System.out.println(list);
+// // int max = Find(list);
+// // System.out.println(max);
+
+// // reversing an arraylist
+// // for (int i = list.size() - 1; i >= 0; i--) {
+// // System.out.print(list.get(i) + " ");
+// // }
+// // System.out.println();
+
+// // sorting an arraylist
+// System.out.println(list);
+// Collections.sort(list);
+// System.out.println(list);
+// Collections.sort(list, Collections.reverseOrder());
+// System.out.println(list);
+//     }
+
+// }
+
+/**
+ * practice
+ */
+
+// public class practice {
+
+//     public static void main(String[] args) {
+//         ArrayList<ArrayList<Integer>> mainList = new ArrayList<>();
+//         ArrayList<Integer> list1 = new ArrayList<>();
+//         ArrayList<Integer> list2 = new ArrayList<>();
+//         ArrayList<Integer> list3 = new ArrayList<>();
+
+//         for (int i = 1; i <= 5; i++) {
+//             list1.add(i * 1);
+//             list2.add(i * 2);
+//             list3.add(i * 3);
+
+//         }
+
+//         mainList.add(list1);
+//         mainList.add(list2);
+//         mainList.add(list3);
+
+//         System.out.println(mainList);
+
+//         for (int i = 0; i < mainList.size(); i++) {
+//             ArrayList<Integer> currList = mainList.get(i);
+//             for (int j = 0; j < currList.size(); j++) {
+//                 System.out.print(currList.get(j) + " ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+
+/**
+ * practice
+ */
+// public class practice {
+//     public static int storeWater(ArrayList<Integer> ht){
+//         int maxWater = 0;
+//         for(int i=0; i<ht.size(); i++){
+//             for(int j=i+1; j<ht.size(); j++){
+//                 int ht = Math.min(ht.get(i), ht.get(j));
+//                 int wt = j-i;
+//                 int currWater = ht*wt;
+//                 maxWater = Math.max(maxWater, currWater);
+//             }
+//         }
+//         return maxWater;
+//     }
+
+//     public static void main(String[] args) {
+//         ArrayList<Integer> ht = new ArrayList<>();
+//         ht.add(1);
+//         ht.add(8);
+//         ht.add(6);
+//         ht.add(2);
+//         ht.add(5);
+//         ht.add(4);
+//         ht.add(8);
+//         ht.add(3);
+//         ht.add(7);
+
+//     }
+// }
+
+import java.util.ArrayList;
+
 public class practice {
-    public static boolean checkPalindro(String str) {
-        for (int i = 0; i < str.length() / 2; i++) {
-            int n = str.length();
-            if (str.charAt(i) != str.charAt(n - 1 - i)) {
-                return false;
+    public static int storeWater(ArrayList<Integer> heights) {
+        int maxWater = 0;
+        for (int i = 0; i < heights.size(); i++) {
+            for (int j = i + 1; j < heights.size(); j++) {
+                int height = Math.min(heights.get(i), heights.get(j));
+                int width = j - i;
+                int currWater = height * width;
+                maxWater = Math.max(maxWater, currWater);
             }
         }
-        return true;
+        return maxWater;
     }
 
     public static void main(String[] args) {
-        String str = "racecar";
-        checkPalindro(str);
-        System.out.println(checkPalindro(str
+        ArrayList<Integer> ht = new ArrayList<>();
+        ht.add(1);
+        ht.add(8);
+        ht.add(6);
+        ht.add(2);
+        ht.add(5);
+        ht.add(4);
+        ht.add(8);
+        ht.add(3);
+        ht.add(7);
 
-        ));
-
+        int result = storeWater(ht);
+        System.out.println("Maximum water that can be stored: " + result);
     }
 }

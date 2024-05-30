@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class water_container_bruteForce {
+public class Container_with_Most_water_brute_force {
     public static int storeWater(ArrayList<Integer> height) {
         int maxWater = 0;
         for (int i = 0; i < height.size(); i++) {
