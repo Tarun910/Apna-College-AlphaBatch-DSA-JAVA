@@ -33,7 +33,6 @@ Welcome to the Alpha Batch DSA Codes Repository! Here you'll find a comprehensiv
 
 Let's connect and collaborate! If you have questions, suggestions, or just want to say hi, feel free to reach out:
 
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/tarun910/)
+- **LinkedIn:** [https://www.linkedin.com/in/tarun910/](https://www.linkedin.com/in/tarun910/)
 - **Email:** namdevtarun910@gmail.com
 
-Happy coding!
