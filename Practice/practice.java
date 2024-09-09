@@ -524,7 +524,6 @@ import java.util.*;
 //     }
 // }
 
-
 /**
  * practice
  */
@@ -557,35 +556,386 @@ import java.util.*;
 //     }
 // }
 
-import java.util.ArrayList;
+// import java.util.ArrayList;
 
+// public class practice {
+//     public static int storeWater(ArrayList<Integer> heights) {
+//         int maxWater = 0;
+//         for (int i = 0; i < heights.size(); i++) {
+//             for (int j = i + 1; j < heights.size(); j++) {
+//                 int height = Math.min(heights.get(i), heights.get(j));
+//                 int width = j - i;
+//                 int currWater = height * width;
+//                 maxWater = Math.max(maxWater, currWater);
+//             }
+//         }
+//         return maxWater;
+//     }
+
+//     public static void main(String[] args) {
+//         ArrayList<Integer> ht = new ArrayList<>();
+//         ht.add(1);
+//         ht.add(8);
+//         ht.add(6);
+//         ht.add(2);
+//         ht.add(5);
+//         ht.add(4);
+//         ht.add(8);
+//         ht.add(3);
+//         ht.add(7);
+
+//         int result = storeWater(ht);
+//         System.out.println("Maximum water that can be stored: " + result);
+//     }
+// }
+
+/**
+ * practice
+ * 
+ */
+// public class practice {
+
+//     public static void main(String[] args) {
+//         int arr[] = { 1, 2, 3, 4, 5, 6 };
+//         int sum = 0;
+//         for (int i = 0; i < arr.length; i++) {
+//             sum += arr[i];
+//         }
+//         System.out.println("The sum of the array is: " + sum);
+
+//     }
+// }
+
+/**
+ * practice
+ */
+// public class practice {
+
+//     public static int arrSum(int arr[]) {
+//         int sum = 0;
+//         for (int element : arr) {
+//             sum += element;
+//         }
+//         return sum;
+//     }
+
+//     public static void main(String[] args) {
+//         int arr[] = { 1, 2, 3, 4, 5 };
+//         int result = arrSum(arr);
+//         System.out.println(result);
+
+//     }
+// }
+
+/**
+ * practice
+ */
+// public class practice {
+//     public static int arrSum(int arr[]) {
+//         int sum = 0;
+//         for (int element : arr) {
+//             sum += element;
+//         }
+//         return sum;
+//     }
+
+//     public static void main(String[] args) {
+//         int arr[] = { 1, 2, 3, 4, 5 };
+//         int sum = arrSum(arr);
+//         System.out.println("The sum is : " + sum);
+//     }
+// }
+
+//binrary search to find an element in array
+/**
+ * practice
+ */
+// public class practice {
+//     public static int binarySearch(int arr[], int key) {
+//         int start = 0;
+//         int end = arr.length - 1;
+//         int mid = (start + end) / 2;
+//         while (start <= end) {
+//             // comprasions
+//             if (arr[mid] == key) {
+//                 return key;
+//             }
+
+//             if (arr[mid] < key) {
+//         return -1;
+//     }
+
+//     public static void main(String[] args) {
+//         int arr[] = { 1, 2, 3, 4, 5, 6, 7 };
+//         int key = 5;
+//         int index = binarySearch(arr, key);
+//         System.out.println(index);
+//     }
+// }
+
+/**
+ * practice
+ */
+
+/**
+ * practice
+ */
+// public class practice {
+//     public static int binarySearch(int arr[], int key) {
+//         int start = 0;
+//         int end = arr.length - 1;
+//         int mid = (start + end) / 2;
+
+//         while (start <= end) {
+//             // comparsions
+//             if (arr[mid] == key) {
+//                 return key;
+//             }
+
+//             if (arr[mid] < key) {
+//                 start = mid + 1;
+//             } else {
+//                 end = mid - 1;
+//             }
+//         }
+//         return -1;
+//     }
+
+//     public static void main(String[] args) {
+//         int arr[] = { 1, 2, 3, 4, 5 };
+//         int key = 5;
+
+//         int index = binarySearch(arr, key);
+//         System.out.println(index);
+//     }
+// }
+
+/**
+ * practice
+ */
+
+/**
+ * practice
+ */
+/**
+ * practice
+ */
+
+/**
+ * practice
+ */
+//   public class practice {
+
+//     public static int BinarySearch(int arr[], int key){
+//         int start = 0;
+//         int end = arr.length-1;
+//         while(start == end){
+//             int mid = (start + end);
+//             //comprasions
+//             if(arr[mid] == key){
+//                 return mid;
+//             }
+//             if(arr[mid] < key){
+//                 start = mid +1;
+//             }else{
+//                 end = mid-1;
+//             }
+//         }
+//         return -1;
+//     }
+//     public static void main(String[] args) {
+//         int arr[] = {1,2,3,4,5,6,7,8};
+//         int key = 5;
+//         int index = BinarySearch(arr, key);
+//         if(index == -1){
+//             System.out.println("index not found");
+//         }else{
+//             System.out.println("key is at index:" + index);
+//         }
+//     }
+//   }
+
+/**
+ * practice
+ */
+// public class practice {
+//     public static boolean checkDuplicate(int arr[]){
+//         for(int i=0; i<arr.length; i++){
+//             for(int j=i+1; j<arr.length; j++){
+//                 if(arr[i] == arr[j]){
+//                     return true;
+//                 }
+//             }
+//         }
+//         return false;
+//     }
+
+//     public static void main(String[] args) {
+//         int arr[] = {1,2,3,4,5,6,7};
+//         System.out.println(checkDuplicate(arr));
+//     }
+// }
+
+/**
+ * practice
+ */
+// public class practice {
+//     public static int countNum(int arr[] , int key){
+//         int count = 0;
+//         for(int i=0; i<arr.length; i++){
+//             if(key == arr[i]){
+//                 count++;
+//             }
+//         }
+//         return count;
+//     }
+
+//     public static void main(String[] args) {
+//         int arr[] = {1,2,2,4,3,4,5,6,7,7};
+//         int key = 2;
+//         countNum(arr, key);
+//     }
+// }
+
+/**
+ * practice
+ */
+
+/**
+ * practice
+ */
+// public class practice {
+
+//     public static void main(String[] args) {
+//         int arr[] = { 1, 2, 4, 5, 9 };
+//         int max = 0;
+//         for (int i = 0; i < arr.length; i++) {
+//             if (arr[i] > max) {
+//                 max = arr[i];
+//             }
+//         }
+//         System.out.println("the max element is : " + max);
+//     }
+// }
+
+/**
+ * practice
+ */
+// public class practice {
+//     public static int findMax(int arr[]) {
+//         int max = Integer.MIN_VALUE;
+//         for (int i = 0; i < arr.length; i++) {
+//             if (arr[i] > max) {
+//                 max = arr[i];
+//             }
+//         }
+//         return max;
+//     }
+
+//     public static int findMin(int arr[]) {
+//         int min = Integer.MAX_VALUE;
+//         for (int i = 0; i < arr.length; i++) {
+//             if (arr[i] < min) {
+//                 min = arr[i];
+//             }
+//         }
+//         return min;
+//     }
+
+//     public static int findOccurence(int arr[], int key) {
+//         int count = 0;
+//         for (int i = 0; i < arr.length; i++) {
+//             if (arr[i] == key) {
+//                 count++;
+//             }
+//         }
+//         return count;
+//     }
+
+//     public static void main(String[] args) {
+//         int arr[] = { 1, 2, 3, 4, 5, 6, 7, 7, 7 };
+//         int key = 7;
+//         System.out.println("the max element is : " + findMax(arr));
+//         System.out.println("the min element is : " + findMin(arr));
+//         System.out.println("the occurence of 7 is :" + findOccurence(arr, key));
+//     }
+// }
+
+/**
+ * practice
+ */
+/**
+ * practice
+ */
+
+/**
+ * practice
+ */
+/**
+ * practice
+ */
+//  public class practice {
+
+//  public static void main(String[] args) {
+//     int arr [] = {1,2,3,4,5};
+//     int sum = 0;
+//     for(int i=0; i<arr.length; i++){
+//         sum+=arr[i];
+//     }
+//     System.out.println(/);
+//  }
+//  }
+
+/**
+ * practice
+ */
+// import java.util.*;
+
+// public class practice {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         while (true) {
+//             System.out.println("enter the number");
+//             int num;
+//             num = sc.nextInt();
+//             if (num % 2 == 0) {
+//                 System.out.println("Even ");
+//             } else {
+//                 System.out.println("Odd");
+//             }
+//         }
+//     }
+// }
+
+/**
+ * practice
+ */
+// public class practice {
+
+//     static int biggestOfThree(int x, int y, int z) {
+//         if (x >= y && x >= z) {
+//             return x;
+//         } else if (y >= x && y >= z) {
+//             return y;
+//         } else
+//             return z;
+//     }
+
+//     public static void main(String[] args) {
+//         int a = 120;
+//         int b = 23;
+//         int c = 35;
+//         int result = biggestOfThree(a, b, c);
+//         System.out.println(result);
+//     }
+// }
+
+
+/**
+ * practice
+ */
 public class practice {
-    public static int storeWater(ArrayList<Integer> heights) {
-        int maxWater = 0;
-        for (int i = 0; i < heights.size(); i++) {
-            for (int j = i + 1; j < heights.size(); j++) {
-                int height = Math.min(heights.get(i), heights.get(j));
-                int width = j - i;
-                int currWater = height * width;
-                maxWater = Math.max(maxWater, currWater);
-            }
-        }
-        return maxWater;
-    }
 
-    public static void main(String[] args) {
-        ArrayList<Integer> ht = new ArrayList<>();
-        ht.add(1);
-        ht.add(8);
-        ht.add(6);
-        ht.add(2);
-        ht.add(5);
-        ht.add(4);
-        ht.add(8);
-        ht.add(3);
-        ht.add(7);
-
-        int result = storeWater(ht);
-        System.out.println("Maximum water that can be stored: " + result);
-    }
+    
 }
