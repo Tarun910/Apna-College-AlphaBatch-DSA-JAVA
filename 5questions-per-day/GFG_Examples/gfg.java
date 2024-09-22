@@ -1,27 +1,27 @@
 import java.util.*;
 /**
-//  * Java Program to Find the Largest of three Numbers
-*/
+ * // * Java Program to Find the Largest of three Numbers
+ */
 
 // import java.util.*;
 
 // public class gfg {
 
-//     public static void main(String[] args) {
-//         int a, b, c;
-//         a = 12;
-//         b = 23;
-//         c = 45;
+// public static void main(String[] args) {
+// int a, b, c;
+// a = 12;
+// b = 23;
+// c = 45;
 
-//         ArrayList<Integer> x = new ArrayList<>();
-//         x.add(a);
-//         x.add(b);
-//         x.add(c);
+// ArrayList<Integer> x = new ArrayList<>();
+// x.add(a);
+// x.add(b);
+// x.add(c);
 
-//         int max = Collections.max(x);
-//         System.out.println(max);
+// int max = Collections.max(x);
+// System.out.println(max);
 
-//     }
+// }
 // }
 
 /**
@@ -32,32 +32,32 @@ import java.util.*;
 
 // class GFG {
 
-//     // Function to find the biggest of three numbers
-//     static int biggestOfThree(int x, int y, int z)
-//     {
+// // Function to find the biggest of three numbers
+// static int biggestOfThree(int x, int y, int z)
+// {
 
-//         return z > (x > y ? x : y) ? z : ((x > y) ? x : y);
-//     }
+// return z > (x > y ? x : y) ? z : ((x > y) ? x : y);
+// }
 
-//     // Main driver function
-//     public static void main(String[] args)
-//     {
+// // Main driver function
+// public static void main(String[] args)
+// {
 
-//         // Declaring variables for 3 numbers
-//         int a, b, c;
+// // Declaring variables for 3 numbers
+// int a, b, c;
 
-//         // Variable holding the largest number
-//         int largest;
-//         a = 5;
-//         b = 10;
-//         c = 3;
-//         // Calling the above function in main
-//         largest = biggestOfThree(a, b, c);
+// // Variable holding the largest number
+// int largest;
+// a = 5;
+// b = 10;
+// c = 3;
+// // Calling the above function in main
+// largest = biggestOfThree(a, b, c);
 
-//         // Printing the largest number
-//         System.out.println(largest
-//                            + " is the largest number.");
-//     }
+// // Printing the largest number
+// System.out.println(largest
+// + " is the largest number.");
+// }
 // }
 
 /**
@@ -65,18 +65,18 @@ import java.util.*;
  */
 // public class gfg {
 
-//     static void checkAlphabet(char x) {
-//         if (x == 'a' || x == 'e' || x == 'i' || x == 'o' || x == 'u') {
-//             System.out.println("The given character is Vowel");
-//         } else {
-//             System.out.println("The given character is Consonant");
-//         }
-//     }
+// static void checkAlphabet(char x) {
+// if (x == 'a' || x == 'e' || x == 'i' || x == 'o' || x == 'u') {
+// System.out.println("The given character is Vowel");
+// } else {
+// System.out.println("The given character is Consonant");
+// }
+// }
 
-//     public static void main(String[] args) {
-//         char ch = 'v';
-//         checkAlphabet(ch);
-//     }
+// public static void main(String[] args) {
+// char ch = 'v';
+// checkAlphabet(ch);
+// }
 // }
 
 /**
@@ -84,19 +84,19 @@ import java.util.*;
  */
 // public class gfg {
 
-//     static int getFactorial(int n) {
-//         if (n == 0)
-//             return 1;
+// static int getFactorial(int n) {
+// if (n == 0)
+// return 1;
 
-//          return n * getFactorial(n - 1);
+// return n * getFactorial(n - 1);
 
-//     }
+// }
 
-//     public static void main(String[] args) {
-//         int num = 5;
-//         int result = getFactorial(num);
-//         System.out.println(result);
-//     }
+// public static void main(String[] args) {
+// int num = 5;
+// int result = getFactorial(num);
+// System.out.println(result);
+// }
 // }
 
 /**
@@ -104,17 +104,17 @@ import java.util.*;
  */
 // public class gfg {
 
-//     static int getFactorial(int n) {
-//         return (n == 0 || n == 1) ? 1 : n * getFactorial(n - 1);
-//     }
+// static int getFactorial(int n) {
+// return (n == 0 || n == 1) ? 1 : n * getFactorial(n - 1);
+// }
 
-//     public static void main(String[] args) {
-//         int num = 10;
+// public static void main(String[] args) {
+// int num = 10;
 
-//         int result = getFactorial(num);
-//         System.out.println(result);
+// int result = getFactorial(num);
+// System.out.println(result);
 
-//     }
+// }
 // }
 
 /**
@@ -122,19 +122,19 @@ import java.util.*;
  */
 // public class gfg {
 
-//     static float simpleIntrest(float P, float R, float T) {
+// static float simpleIntrest(float P, float R, float T) {
 
-//         float SI = (P * R * T) / 100;
-//         return SI;
-//     }
+// float SI = (P * R * T) / 100;
+// return SI;
+// }
 
-//     public static void main(String[] args) {
-//         float p = 5000;
-//         float r = 5;
-//         float t = 3;
-//         float result = simpleIntrest(p, r, t);
-//         System.out.println("The SI is : " + result);
-//     }
+// public static void main(String[] args) {
+// float p = 5000;
+// float r = 5;
+// float t = 3;
+// float result = simpleIntrest(p, r, t);
+// System.out.println("The SI is : " + result);
+// }
 // }
 
 /**
@@ -142,34 +142,34 @@ import java.util.*;
  */
 // public class gfg {
 
-//     public static void main(String[] args) {
-//         int arr[] = { 1, 2, 3, 4, 5 };
-//         int sum = 0;
-//         for (int i = 0; i < arr.length; i++) {
-//             sum += arr[i];
-//         }
-//         System.out.println("Sum of the array is : " + sum);
-//     }
+// public static void main(String[] args) {
+// int arr[] = { 1, 2, 3, 4, 5 };
+// int sum = 0;
+// for (int i = 0; i < arr.length; i++) {
+// sum += arr[i];
+// }
+// System.out.println("Sum of the array is : " + sum);
+// }
 // }
 
 /**
- * gfg
+ * Array Sum
  */
 // public class gfg {
 
-//     static int sumArr(int arr[]) {
-//         int sum = 0;
-//         for (int i = 0; i < arr.length; i++) {
-//             sum += arr[i];
-//         }
-//         return sum;
-//     }
+// static int sumArr(int arr[]) {
+// int sum = 0;
+// for (int i = 0; i < arr.length; i++) {
+// sum += arr[i];
+// }
+// return sum;
+// }
 
-//     public static void main(String[] args) {
-//         int arr[] = { 1, 2, 3, 4, 5 };
-//         int result = sumArr(arr);
-//         System.out.println(result);
-//     }
+// public static void main(String[] args) {
+// int arr[] = { 1, 2, 3, 4, 5 };
+// int result = sumArr(arr);
+// System.out.println(result);
+// }
 // }
 
 /**
@@ -177,22 +177,22 @@ import java.util.*;
  */
 // public class gfg {
 
-//     static boolean checkDuplicate(int arr[]) {
-//         for (int i = 0; i < arr.length; i++) {
-//             for (int j = i + 1; j < arr.length; j++) {
-//                 if (arr[i] == arr[j]) {
-//                     return true;
-//                 }
-//             }
-//         }
-//         return false;
-//     }
+// static boolean checkDuplicate(int arr[]) {
+// for (int i = 0; i < arr.length; i++) {
+// for (int j = i + 1; j < arr.length; j++) {
+// if (arr[i] == arr[j]) {
+// return true;
+// }
+// }
+// }
+// return false;
+// }
 
-//     public static void main(String[] args) {
-//         int arr[] = { 1, 2, 3, 4, 5,  6, 7, 8, 9, 0 };
+// public static void main(String[] args) {
+// int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
 
-//         System.out.println(checkDuplicate(arr));
-//     }
+// System.out.println(checkDuplicate(arr));
+// }
 // }
 
 /**
@@ -200,22 +200,22 @@ import java.util.*;
  */
 // public class gfg {
 
-//     static int countKey(int arr[], int key) {
-//         int count = 0;
-//         for (int i = 0; i < arr.length; i++) {
-//             if (key == arr[i]) {
-//                 count++;
-//             }
-//         }
-//         return count;
-//     }
+// static int countKey(int arr[], int key) {
+// int count = 0;
+// for (int i = 0; i < arr.length; i++) {
+// if (key == arr[i]) {
+// count++;
+// }
+// }
+// return count;
+// }
 
-//     public static void main(String[] args) {
-//         int arr[] = { 1, 2, 3, 4, 5, 5, 6, 7, 7, 6, 5, 7, 7, 7, 7, 7 };
-//         int key = 7;
+// public static void main(String[] args) {
+// int arr[] = { 1, 2, 3, 4, 5, 5, 6, 7, 7, 6, 5, 7, 7, 7, 7, 7 };
+// int key = 7;
 
-//         System.out.println(countKey(arr, key));
-//     }
+// System.out.println(countKey(arr, key));
+// }
 // }
 
 /**
@@ -223,51 +223,162 @@ import java.util.*;
  */
 // public class gfg {
 
-//     static int checkLargest(int arr[]) {
+// static int checkLargest(int arr[]) {
 
-//         int max = 0;
-//         for (int i = 0; i < arr.length; i++) {
-//             if (arr[i] > max) {
-//                 max = arr[i];
-//             }
-//         }
-//         return max;
-//     }
+// int max = 0;
+// for (int i = 0; i < arr.length; i++) {
+// if (arr[i] > max) {
+// max = arr[i];
+// }
+// }
+// return max;
+// }
 
-//     public static void main(String[] args) {
-//         int arr[] = {99, 1, 2, 3, 4, 5 };
+// public static void main(String[] args) {
+// int arr[] = {99, 1, 2, 3, 4, 5 };
 
-//         System.out.println(checkLargest(arr));
-//     }
+// System.out.println(checkLargest(arr));
+// }
 
 // }
 
 /**
  * gfg
  */
+// public class gfg {
+// public static void main(String[] args) {
+// int a = 12;
+// int b = 23;
+// int c = 34;
+
+// if (a > b && a > c) {
+// System.out.println("a is greater");
+// }
+// if (b > a && b > c) {
+// System.out.println("b is greater");
+// } else {
+// System.out.println("c is greater");
+// }
+
+// }
+//
+
+// ----------------->>>>>>>>9/22/2024<<<<<<<<<----------------
+// ----------------->>>>>>>>9/22/2024<<<<<<<<<----------------
+// ----------------->>>>>>>>9/22/2024<<<<<<<<<----------------
+
+// primer numbers = 1,3,5 / 1 and self
+/**
+ * Find if number is Prime
+ */
+// public class gfg {
+
+// public static void main(String[] args) {
+// int div = 2;
+// int p = 7;
+// boolean isPrime = true; // Flag to track if the number is prime
+
+// for (int i = div; i < p; i++) {
+// if (p % i == 0) {
+// System.out.println("not prime");
+// isPrime = false; // Set flag to false if a divisor is found
+// break;
+// }
+// }
+
+// // If no divisors were found, the number is prime
+// if (isPrime) {
+// System.out.println("prime");
+// }
+// }
+// }
 
 /**
- * gfg
+ * Sum of first n natural numbers
  */
-public class gfg {
+// public class gfg {
 
-    public static void main(String[] args) {
-        int arr[] = { 1, 2, 3, 4, 5, 4, 4, 3, 3333 };
-        int max = Integer.MIN_VALUE;
-        int min = Integer.MAX_VALUE;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > max) {
-                max = arr[i];
-            }
-        }
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] < min) {
-                min = arr[i];
-            }
-        }
+// public static void main(String[] args) {
+// int div = 5;
+// int sum = 0;
+// for (int i = 0; i <= div; i++) {
+// sum += i;
+// }
+// System.out.println("the sum is :: " + sum);
+// }
+// }
 
-        System.out.println("Max is : " + max);
-        System.out.println("Min is : " + min);
+/**
+ * Area of Circle = Pi * r * r (3.14 * r * r)
+ */
+// public class gfg {
 
-    }
-}
+// static float findArea(float radius) {
+
+// float result = (3.14f * radius * radius);
+
+// return result;
+// }
+
+// public static void main(String[] args) {
+
+// float r = 2;
+
+// System.out.println(findArea(r));
+// }
+// }
+
+/**
+ * star - pattern square
+ */
+// public class gfg {
+
+// public static void main(String[] args) {
+
+// int n = 4;
+// for (int i = 0; i < 4; i++) {
+// for (int j = 0; j < 4; j++) {
+// System.out.print("*");
+// }
+// System.out.println();
+// }
+// }
+// }
+
+/**
+ * Display all the number entered by user except multiples of 10
+ */
+// public class gfg {
+
+// public static void main(String[] args) {
+
+// do {
+
+// System.out.println("enter the number");
+// Scanner sc = new Scanner(System.in);
+// int num = sc.nextInt();
+// if (num % 10 == 0) {
+// continue;
+// }
+// System.out.println("number was " + num);
+// } while (true);
+
+// }
+// }
+
+/**
+ * one more star pattern
+ */
+// public class gfg {
+
+//   public static void main(String[] args) {
+//     int n = 4;
+//     for (int i = 1; i <= 4; i++) {
+//       for (int j = i; j <= 4; j++) {
+//         System.out.print("*");
+//       }
+//       System.out.println();
+//     }
+
+//   }
+// }
