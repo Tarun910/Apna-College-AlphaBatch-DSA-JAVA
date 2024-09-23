@@ -382,3 +382,158 @@ import java.util.*;
 
 //   }
 // }
+
+// ----------------->>>>>>>>9/23/2024<<<<<<<<<----------------
+// ----------------->>>>>>>>9/23/2024<<<<<<<<<----------------
+// ----------------->>>>>>>>9/23/2024<<<<<<<<<----------------
+
+/**
+ * 
+ * Star pattern
+ */
+// public class gfg {
+
+//     public static void main(String[] args) {
+//         int n= 4;
+//         for(int i=1; i<=n; i++){
+//             for(int j=1; j<=i; j++){
+//                 System.out.print("*");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+/**
+ * reverse star pattern
+ */
+// public class gfg {
+
+//     public static void main(String[] args) {
+//         int n = 4;
+//         for (int i = n; i >= 1; i--) {
+//             for (int j = 1; j <= i; j++) {
+//                 System.out.print("*");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+/**
+ * print half-pyramid pattern
+ */
+// public class gfg {
+
+//     public static void main(String[] args) {
+//         int n = 4;
+//         for (int i = 1; i <= n; i++) {
+//             for (int j = 1; j <= i; j++) {
+//                 System.out.print(j);
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+/**
+ * find the index of element in a give array (Linear Search)
+ *  
+ */
+
+/**
+ * gfg
+ */
+// public class gfg {
+
+//     public static void linearSearch(int nums[], int key) {
+//         boolean found = false; // Flag to track if the key is found
+
+//         for (int i = 0; i < nums.length; i++) {
+//             if (nums[i] == key) {
+//                 System.out.println("The index is : " + i);
+//                 found = true; // Set the flag to true if the key is found
+//                 break; // Exit the loop once the key is found
+//             }
+//         }
+
+//         // If the key was not found, print this message
+//         if (!found) {
+//             System.out.println("Not found");
+//         }
+//     }
+
+//     public static void main(String[] args) {
+//         int nums[] = { 2, 3, 4, 5, 6, 7, 78, 8 }; // Array to search
+//         int key = 78; // Key to search for
+
+//         linearSearch(nums, key); // Call the linearSearch method
+//     }
+
+// }
+
+/**
+ * Find largest 
+ */
+
+//int max = Integer.MIN_VALUE;
+// int min = Integer.MAX_VALUE;
+// public class gfg {
+//     public static int findLargest(int arr[]) {
+
+//         int max = arr[0];  
+//         for (int i = 0; i < arr.length; i++) {
+//             if (arr[i] > max) {
+//                 max = arr[i];
+//             }
+//         }
+
+//         return max;
+//     }
+
+//     public static void main(String[] args) {
+//         int arr[] = { 1, 2, 3, 4, 5 };
+
+//         System.out.println("the largest is : " + findLargest(arr));
+//     }
+// }
+
+/**
+ * Binary Search
+ */
+public class gfg {
+
+    public static int BinarySearch(int arr[], int key) {
+        int start = 0;
+        int end = arr.length - 1;
+
+        while (start <= end) {
+            int mid = (start + end) / 2; // Corrected calculation of mid
+
+            if (arr[mid] == key) {
+                return mid; // Return the index if the key is found
+            }
+
+            if (arr[mid] < key) { // Search in the right half
+                start = mid + 1;
+            } else { // Search in the left half
+                end = mid - 1;
+            }
+        }
+
+        return -1; // Return -1 if the key is not found
+    }
+
+    public static void main(String[] args) {
+        int arr[] = { 1, 2, 3, 4, 5, 6, 7 };
+        int key = 5;
+        int index = BinarySearch(arr, key);
+
+        if (index == -1) {
+            System.out.println("Index Not Found !");
+        } else {
+            System.out.println("Key is at Index: " + index);
+        }
+    }
+
+}
