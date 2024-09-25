@@ -501,39 +501,331 @@ import java.util.*;
 /**
  * Binary Search
  */
+// public class gfg {
+
+//     public static int BinarySearch(int arr[], int key) {
+//         int start = 0;
+//         int end = arr.length - 1;
+
+//         while (start <= end) {
+//             int mid = (start + end) / 2; // Corrected calculation of mid
+
+//             if (arr[mid] == key) {
+//                 return mid; // Return the index if the key is found
+//             }
+
+//             if (arr[mid] < key) { // Search in the right half
+//                 start = mid + 1;
+//             } else { // Search in the left half
+//                 end = mid - 1;
+//             }
+//         }
+
+//         return -1; // Return -1 if the key is not found
+//     }
+
+//     public static void main(String[] args) {
+//         int arr[] = { 1, 2, 3, 4, 5, 6, 7 };
+//         int key = 5;
+//         int index = BinarySearch(arr, key);
+
+//         if (index == -1) {
+//             System.out.println("Index Not Found !");
+//         } else {
+//             System.out.println("Key is at Index: " + index);
+//         }
+//     }
+
+// }
+
+// ----------------->>>>>>>>9/24/2024<<<<<<<<<----------------
+// ----------------->>>>>>>>9/24/2024<<<<<<<<<----------------
+// ----------------->>>>>>>>9/24/
+
+/**
+ * 
+ * Reverse an Array
+ */
+// public class gfg {
+
+//     public static void reverse(int arr[]) {
+//         int start = 0;
+//         int end = arr.length - 1;
+//         while (start <= end) {
+
+//             int temp = arr[start];
+//             arr[start] = arr[end];
+
+//             arr[end] = temp;
+//             start++;
+//             end--;
+
+//         }
+//     }
+
+//     public static void main(String[] args) {
+//         int arr[] = { 1, 2, 3, 4, 5 };
+//         reverse(arr);
+//         for (int i = 0; i < arr.length; i++) {
+//             System.out.print(arr[i]);
+//         }
+//         System.out.println();
+//     }
+// }
+
+//Pairs of the Array
+// public class gfg {
+//     public static void printPairs(int arr[]) {
+//         for (int i = 0; i < arr.length; i++) {
+//             int curr = arr[i]; // 2,4,6,8,10
+//             for (int j = i + 1; j < arr.length; j++) {
+//                 System.out.print("(" + curr + "," + arr[j] + ") ");
+//             }
+//             System.out.println();
+//         }
+//     }
+
+//     public static void main(String[] args) {
+//         int arr[] = { 2, 4, 6, 8, 10 };
+//         printPairs(arr); // Call the method to printPairs();
+//     }
+// }
+
+/**
+ * Trapping Rain Water
+ */
+// public class gfg {
+
+//     public static int trappedRainwater(int height[]) {
+//         int n = height.length;
+//         // calculate the left boundary
+//         int leftMax[] = new int[n];
+//         leftMax[0] = height[0];
+//         for (int i = 1; i < n; i++) {
+//             leftMax[i] = Math.max(height[i], leftMax[i - 1]);
+//         }
+
+//         // calculate the right boundary
+//         int rightMax[] = new int[n];
+//         rightMax[n - 1] = height[n - 1];
+//         for (int i = n - 2; i >= 0; i--) {
+//             rightMax[i] = Math.max(height[i], rightMax[i + 1]);
+//         }
+
+//         int trappedWater = 0;
+//         // loop
+//         for (int i = 0; i < n; i++) {
+//             // waterLevel = min(leftmax bound , rightmax bound)
+//             int waterLevel = Math.min(leftMax[i], rightMax[i]);
+
+//             // trapped water = waterLevel - height[i]
+//             trappedWater += waterLevel - height[i];
+//         }
+//         return trappedWater;
+//     }
+
+//     public static void main(String[] args) {
+//         int height[] = { 4, 2, 0, 6, 3, 2, 5 };
+//         System.out.println(trappedRainwater(height));
+//     }
+// }
+
+/**
+ * buyAndSellStocks
+ */
+// public class gfg {
+
+//     public static int buyAndSellStocks(int prices[]) {
+//         int buyPrice = Integer.MAX_VALUE;
+//         int maxProfit = 0;
+
+//         for (int i = 0; i < prices.length; i++) {
+//             if (buyPrice < prices[i]) {// profit
+//                 int profit = prices[i] - buyPrice; // today's profit
+//                 maxProfit = Math.max(maxProfit, profit);
+//             } else {
+//                 buyPrice = prices[i];
+//             }
+//         }
+//         return maxProfit;
+//     }
+
+//     public static void main(String[] args) {
+//         int prices[] = { 7, 1, 5, 3, 6, 4 };
+//         System.out.println(buyAndSellStocks(prices));
+//     }
+// }
+
+/**
+ * BubbleSorting
+ */
+// public class gfg {
+//     public static void BubbleSort(int arr[]) {
+//         for (int turn = 0; turn < arr.length; turn++) {
+//             for (int j = 0; j < arr.length - 1 - turn; j++) {
+
+//                 if (arr[j] > arr[j + 1]) {
+//                     // swap
+//                     int temp = arr[j];
+//                     arr[j] = arr[j + 1];
+//                     arr[j + 1] = temp;
+//                 }
+//             }
+//         }
+//     }
+
+//     //function to print sorted array
+//     public static void printArr(int arr[]) {
+//         for (int i = 0; i < arr.length; i++) {
+//             System.out.print(arr[i] + " ");
+//         }
+//         System.out.println();
+//     }
+
+//     public static void main(String[] args) {
+//         int arr[] = { 5, 4, 1, 3, 2 };
+//         BubbleSort(arr);
+//         printArr(arr);
+//     }
+// }
+
+/**
+ * selectionSort
+ */
+
+//  public class gfg {
+//     public static void selectionSort(int arr[]) {
+//         // Check if the array is not null
+//         if (arr == null) {
+//             System.out.println("Array is null");
+//             return;
+//         }
+
+//         // Perform selection sort
+//         for (int i = 0; i < arr.length - 1; i++) {
+//             int minPos = i;
+//             for (int j = i + 1; j < arr.length; j++) {  
+//                 if (arr[minPos] > arr[j]) {
+//                     minPos = j;
+//                 }
+//             }
+
+//             // Swap elements
+//             int temp = arr[minPos];
+//             arr[minPos] = arr[i];
+//             arr[i] = temp;
+//         }
+//     }
+
+//     // Function to print sorted array
+//     public static void printArr(int arr[]) {
+//         if (arr == null) {
+//             System.out.println("Array is null");
+//             return;
+//         }
+
+//         for (int i = 0; i < arr.length; i++) {
+//             System.out.print(arr[i] + " ");
+//         }
+//         System.out.println();
+//     }
+
+//     public static void main(String[] args) {
+//         // Sample array
+//         int arr[] = { 5, 4, 1, 3, 2 };
+
+//         // Sort the array
+//         selectionSort(arr);
+
+//         // Print the sorted array
+//         printArr(arr);
+//     }
+// }
+
+/**
+ * insertinSort
+ */
+// public class gfg {
+//     // Function to perform Insertion Sort
+//     public static void insertionSort(int arr[]) {
+//         for (int i = 1; i < arr.length; i++) {
+//             int curr = arr[i];        // Current element
+//             int prev = i - 1;         // Index of previous element
+//             // Shift elements of the sorted portion to the right if they are larger than the current element
+//             while (prev >= 0 && arr[prev] > curr) {
+//                 arr[prev + 1] = arr[prev];
+//                 prev--;
+//             }
+//             // Place the current element in its correct position
+//             arr[prev + 1] = curr;
+//         }
+//     }
+
+//     // Function to print the array
+//     public static void printArr(int arr[]) {
+//         for (int i = 0; i < arr.length; i++) {
+//             System.out.print(arr[i] + " ");
+//         }
+//         System.out.println();
+//     }
+
+//     public static void main(String[] args) {
+
+//         int arr[] = { 5, 4, 1, 3, 2 };  // Sample array
+//         insertionSort(arr);  // Sort the array using Insertion Sort
+//         printArr(arr);  // Print the sorted array
+//     }
+// }
+
+/**
+ * 2d-Arrays
+ */
+import java.util.Scanner;
+
 public class gfg {
 
-    public static int BinarySearch(int arr[], int key) {
-        int start = 0;
-        int end = arr.length - 1;
-
-        while (start <= end) {
-            int mid = (start + end) / 2; // Corrected calculation of mid
-
-            if (arr[mid] == key) {
-                return mid; // Return the index if the key is found
-            }
-
-            if (arr[mid] < key) { // Search in the right half
-                start = mid + 1;
-            } else { // Search in the left half
-                end = mid - 1;
+    // Function to search the key in the matrix
+    public static boolean searchKey(int matrix[][], int key) {
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                if (matrix[i][j] == key) { // Corrected 'martix' to 'matrix'
+                    System.out.println("Found at cell (" + i + "," + j + ")"); // Corrected 'j' in print statement
+                    return true;
+                }
             }
         }
-
-        return -1; // Return -1 if the key is not found
+        return false; // Return false if the key is not found
     }
 
     public static void main(String[] args) {
-        int arr[] = { 1, 2, 3, 4, 5, 6, 7 };
-        int key = 5;
-        int index = BinarySearch(arr, key);
+        int matrix[][] = new int[3][3]; // 3x3 matrix
+        int n = matrix.length, m = matrix[0].length;
 
-        if (index == -1) {
-            System.out.println("Index Not Found !");
-        } else {
-            System.out.println("Key is at Index: " + index);
+        Scanner sc = new Scanner(System.in);
+
+        // Input the matrix
+        System.out.println("Enter matrix elements:");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                matrix[i][j] = sc.nextInt();
+            }
+        }
+
+        // Output the matrix
+        System.out.println("Matrix is:");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        // Search for a key
+        int key = 5; // Example key to search
+        boolean isFound = searchKey(matrix, key);
+
+        if (!isFound) {
+            System.out.println("Key not found.");
         }
     }
-
 }
