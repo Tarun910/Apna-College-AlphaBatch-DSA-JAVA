@@ -60,6 +60,50 @@ import java.util.*;
 // }
 // }
 
+/*
+ * class GFG {
+ * 
+ * // Function to find the biggest of three numbers
+ * static int biggestOfThree(int x, int y, int z) {
+ * int largest;
+ * 
+ * // Compare x and y first, then compare the result with z
+ * if (x > y) {
+ * largest = x;
+ * } else {
+ * largest = y;
+ * }
+ * 
+ * if (z > largest) {
+ * largest = z;
+ * }
+ * 
+ * return largest;
+ * }
+ * 
+ * // Main driver function
+ * public static void main(String[] args) {
+ * 
+ * // Declaring variables for 3 numbers
+ * int a, b, c;
+ * 
+ * // Variable holding the largest number
+ * int largest;
+ * 
+ * a = 5;
+ * b = 10;
+ * c = 3;
+ * 
+ * // Calling the above function in main
+ * largest = biggestOfThree(a, b, c);
+ * 
+ * // Printing the largest number
+ * System.out.println(largest + " is the largest number.");
+ * }
+ * }
+ * 
+ */
+
 /**
  * Java Program to Check Whether the Character is Vowel or Consonant
  */
