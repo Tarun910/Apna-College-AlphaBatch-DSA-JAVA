@@ -123,6 +123,29 @@ import java.util.*;
 // }
 // }
 
+// It will show the correct output for small and capital both
+/*
+ * class HelloWorld {
+ * public static void checkAlphabet(char x) {
+ * // Convert character to lowercase to handle both uppercase and lowercase
+ * vowels
+ * char lowerCaseChar = Character.toLowerCase(x);
+ * if (lowerCaseChar == 'a' || lowerCaseChar == 'e' || lowerCaseChar == 'i' ||
+ * lowerCaseChar == 'o' || lowerCaseChar == 'u') {
+ * System.out.println("It is an Alphabet");
+ * } else {
+ * System.out.println("Not an Alphabet");
+ * }
+ * }
+ * 
+ * public static void main(String[] args) {
+ * char ch = 'A'; // Test with an uppercase vowel
+ * checkAlphabet(ch);
+ * }
+ * }
+ * 
+ */
+
 /**
  * Java Program for factorial of a number
  */
